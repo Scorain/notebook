@@ -82,9 +82,7 @@ plugins: [
 
 ### webpack常用插件
 
->webpack自带
-
-*DefinePlugin 开发环境定义
+1. DefinePlugin 开发环境定义
 ```
 plugins:{
 	new webpack.DefinePlugin({
@@ -94,8 +92,7 @@ plugins:{
 	})
 }
 ```
-
-*UglifyJsPlugin 压缩混淆
+2. UglifyJsPlugin 压缩混淆
 ```
 plugins:{
 	new webpack.optimize.UglifyJsPlugin({
@@ -105,15 +102,13 @@ plugins:{
 	})
 }
 ```
-
-*HotModuleReplacement 热加载
+3. HotModuleReplacement 热加载
 ```
 plugins:{
 	new webpack.HotModuleReplacementPlugin()
 }
 ```
-
-*ProvidePlugin 即时加载
+4. ProvidePlugin 即时加载
 ```
 plugins:{
 	new webpack.ProvidePlugin({
@@ -121,31 +116,25 @@ plugins:{
 	})
 }
 ```
-
-*DedupePlugin 删除重复依赖
+5. DedupePlugin 删除重复依赖
 ```
 plugins:{
 	new webpack.optimize.DedupePlugin()
 }
 ```
-
-*NoErrorsPlugin 跳过编译错误
+6. NoErrorsPlugin 跳过编译错误
 ```
 plugins:{
 	new webpack.NoErrorsPlugin()
 }
 ```
-
-*CommonsChunkPlugin 提取公共模块
+7. CommonsChunkPlugin 提取公共模块
 ```
 plugins:{
 	new webpack.optimize.CommonsChunkPlugin(options)
 }
 ```
-
->外部引入
-
-*ExtractTextPlugin 文件抽取
+8. ExtractTextPlugin 文件抽取
 ```
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module:{
@@ -160,16 +149,14 @@ plugins:{
 	new ExtractTextPlugin([id: string], filename: string, [options])
 }
 ```
-
-*OpenBrowserPlugin 启动浏览器
+9. OpenBrowserPlugin 启动浏览器
 ```
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 plugins:{
 	new OpenBrowserPlugin({ url: 'http://localhost:9090/' })
 }
 ```
-
-*HtmlWebpackPlugin HTML文件生成
+10. HtmlWebpackPlugin HTML文件生成
 ```
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 plugins:{
