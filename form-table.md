@@ -34,7 +34,13 @@ attribute:name、rows、cols、placeholder、readonly、required、disabled
 
 >3.th/td
 
-### 框架
+### 页面框架
+
+>1.iframe
+
+attribute:src、frameborder、scrolling
+
+### UI框架
 
 >[EasyUI](http://www.jeasyui.com/)适用于**后台管理系统**的前端界面（表单、表格数据交互繁多）
 
