@@ -157,3 +157,34 @@ var isArrayLike = function(collection) {
 	return typeof length == 'number' && length >=0 && length <= MAX_ARRAY_INDEX;
 }
 ```
+
+#### 集合方法
+```
+_.each(collections,iteratee,context)
+_.map(collections,iteratee,context)
+_.reduce(collections,iteratee,demo,context)
+_.reduceRight(collections,iteratee,demo,context)
+_.find(collections,predicate,context)
+_.filter(collections,predicate,context)
+_.reject(collections,predicate,context)
+_.every(collections,predicate,context)
+_.some(collections,predicate,context)
+_.contains(collections,item,fromIndex,guard)
+_.invoke(collections,method)
+_.pluck(collections,keys)
+_.where(collections,attrs)
+_.findWhere(collections,attrs)
+_.max(collections,predicate,context)
+_.min(collections,predicate,context)
+_.shuffle(collections)
+_.sample(collections,n,guard)
+_.sortBy(collections,iteratee,context)
+_.groupBy(collections,iteratee,context)
+_.indexBy(collections,iteratee,context)
+_.countBy(collections,iteratee,context)
+_.toArray(obj)
+_.size(obj)
+_.partition(collections,predicate,context)
+```
+
+>underscore的方法中采用了大量的闭包、curry等写法来保存变量和提取公共模块。
