@@ -30,6 +30,12 @@ attribute:name、rows、cols、placeholder、readonly、required、disabled
 
 >1.table
 
+attribute:
+
 >2.tr
 
+attribute:
+
 >3.th/td
+
+attribute:
