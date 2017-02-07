@@ -1,14 +1,14 @@
 ## webpack
 
->Ä£¿é¼ÓÔØÆ÷ & ´ò°ü¹¤¾ß£¬ Ïà¹ØÎÄÕÂ¿É²Î¿¼[²®ÀÖÔÚÏß-webpack](http://web.jobbole.com/tag/webpack/)¡£
+>æ¨¡å—åŠ è½½å™¨ & æ‰“åŒ…å·¥å…·ï¼Œ ç›¸å…³æ–‡ç« å¯å‚è€ƒ[ä¼¯ä¹åœ¨çº¿-webpack](http://web.jobbole.com/tag/webpack/)ã€‚
 
-### °²×°
+### å®‰è£…
 
 ```
 npm install webpack -g --save
 ```
 
-### ÅäÖÃ
+### é…ç½®
 
 ```
 var webpack = require('webpack');
@@ -23,7 +23,7 @@ module.exports = {
 }
 ```
 
-#### Èë¿Ú
+#### å…¥å£
 
 ```
 /* entry: String | Array | Object */
@@ -33,37 +33,37 @@ entry:{
 
 eg:
 entry: [
-	/*±¾µØ·şÎñ*/
+	/*æœ¬åœ°æœåŠ¡*/
 	'webpack-dev-server/client?http://localhost:9090',
-	/*Èë¿ÚÎÄ¼ş*/
+	/*å…¥å£æ–‡ä»¶*/
 	path.resolve(__dirname,'public/app.js')
 ]
 ```
 
-#### ³ö¿Ú
+#### å‡ºå£
 
 ```
 output: {
-	/*´¦ÀíÒ»Ğ©ÒıÓÃÂ·¾¶µÄÎÊÌâ£¬ÈçCDN*/
+	/*å¤„ç†ä¸€äº›å¼•ç”¨è·¯å¾„çš„é—®é¢˜ï¼Œå¦‚CDN*/
 	publicPath: '',
-	/*Êä³öÎÄ¼şµÄÂ·¾¶*/
+	/*è¾“å‡ºæ–‡ä»¶çš„è·¯å¾„*/
 	path: path.resolve('public'),
-	/*Êä³öÎÄ¼şÃû[name](Ä¬ÈÏmain)¡¢[hash](ÎÄ¼ş¹şÏ£Öµ)*/
+	/*è¾“å‡ºæ–‡ä»¶å[name](é»˜è®¤main)ã€[hash](æ–‡ä»¶å“ˆå¸Œå€¼)*/
 	filename: 'app/[name].min.js?[hash]'
 }
 ```
 
-#### ¼ÓÔØÆ÷
+#### åŠ è½½å™¨
 
 ```
 module: {
 	loaders: [
-		{ //es6±àÒëÖÁes5
+		{ //es6ç¼–è¯‘è‡³es5
 			test: /\.js$/,
 			exclude: /node_modules/,
 			loader: 'babel'
 		},
-		{ //ÌáÈ¡cssÎÄ¼ş
+		{ //æå–cssæ–‡ä»¶
 			test: /\.css$/,
 			loader: ExtractTextPlugin.extract('style','css')
 		}
@@ -71,18 +71,18 @@ module: {
 }
 ```
 
-#### ²å¼ş
+#### æ’ä»¶
 
 ```
 plugins: [
-	/*cssÎÄ¼şÌáÈ¡Ä¿±êÎÄ¼şÃû[name](Ä¬ÈÏÎªmain)*/
+	/*cssæ–‡ä»¶æå–ç›®æ ‡æ–‡ä»¶å[name](é»˜è®¤ä¸ºmain)*/
 	new ExtractTextPlugin('[name].min.css')
 ]
 ```
 
-### webpack³£ÓÃ²å¼ş
+### webpackå¸¸ç”¨æ’ä»¶
 
-1. DefinePlugin ¿ª·¢»·¾³¶¨Òå
+1. DefinePlugin å¼€å‘ç¯å¢ƒå®šä¹‰
 ```
 plugins:{
 	new webpack.DefinePlugin({
@@ -92,7 +92,8 @@ plugins:{
 	})
 }
 ```
-2. UglifyJsPlugin Ñ¹Ëõ»ìÏı
+
+2. UglifyJsPlugin å‹ç¼©æ··æ·†
 ```
 plugins:{
 	new webpack.optimize.UglifyJsPlugin({
@@ -102,13 +103,15 @@ plugins:{
 	})
 }
 ```
-3. HotModuleReplacement ÈÈ¼ÓÔØ
+
+3. HotModuleReplacement çƒ­åŠ è½½
 ```
 plugins:{
 	new webpack.HotModuleReplacementPlugin()
 }
 ```
-4. ProvidePlugin ¼´Ê±¼ÓÔØ
+
+4. ProvidePlugin å³æ—¶åŠ è½½
 ```
 plugins:{
 	new webpack.ProvidePlugin({
@@ -116,25 +119,29 @@ plugins:{
 	})
 }
 ```
-5. DedupePlugin É¾³ıÖØ¸´ÒÀÀµ
+
+5. DedupePlugin åˆ é™¤é‡å¤ä¾èµ–
 ```
 plugins:{
 	new webpack.optimize.DedupePlugin()
 }
 ```
-6. NoErrorsPlugin Ìø¹ı±àÒë´íÎó
+
+6. NoErrorsPlugin è·³è¿‡ç¼–è¯‘é”™è¯¯
 ```
 plugins:{
 	new webpack.NoErrorsPlugin()
 }
 ```
-7. CommonsChunkPlugin ÌáÈ¡¹«¹²Ä£¿é
+
+7. CommonsChunkPlugin æå–å…¬å…±æ¨¡å—
 ```
 plugins:{
 	new webpack.optimize.CommonsChunkPlugin(options)
 }
 ```
-8. ExtractTextPlugin ÎÄ¼ş³éÈ¡
+
+8. ExtractTextPlugin æ–‡ä»¶æŠ½å–
 ```
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module:{
@@ -149,14 +156,16 @@ plugins:{
 	new ExtractTextPlugin([id: string], filename: string, [options])
 }
 ```
-9. OpenBrowserPlugin Æô¶¯ä¯ÀÀÆ÷
+
+9. OpenBrowserPlugin å¯åŠ¨æµè§ˆå™¨
 ```
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 plugins:{
 	new OpenBrowserPlugin({ url: 'http://localhost:9090/' })
 }
 ```
-10. HtmlWebpackPlugin HTMLÎÄ¼şÉú³É
+
+10. HtmlWebpackPlugin HTMLæ–‡ä»¶ç”Ÿæˆ
 ```
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 plugins:{
@@ -168,9 +177,9 @@ plugins:{
 }
 ```
 
-### Ò»¸öÍêÕûµÄÊµÀı
+### ä¸€ä¸ªå®Œæ•´çš„å®ä¾‹
 
->Áí¼û[ÓÑÃÅÂ¹Î¢ÉÌ³Ç1.2ÏîÄ¿](https://github.com/Scorain/JOBcoding/tree/master/yml/wechat1.2)
+>å¦è§[å‹é—¨é¹¿å¾®å•†åŸ1.2é¡¹ç›®](https://github.com/Scorain/JOBcoding/tree/master/yml/wechat1.2)
 
 
 ```
@@ -183,7 +192,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
 	
     entry: [
-	??? 'webpack-dev-server/client?http://localhost:9090',//×ÊÔ´·şÎñÆ÷µØÖ·
+	??? 'webpack-dev-server/client?http://localhost:9090',//èµ„æºæœåŠ¡å™¨åœ°å€
 	??? path.resolve(__dirname, 'public/app.js'),
 	],
 	output: {
@@ -200,7 +209,7 @@ module.exports = {
             }, 
             {
                 test: /\.(png|jpg|gif)$/,
-                loader: 'url?limit=1024&name=img/[name].[ext]' // Ğ¡ÓÚ1k base64
+                loader: 'url?limit=1024&name=img/[name].[ext]' // å°äº1k base64
             },
             {
             	test: /\.css$/, 
@@ -230,9 +239,9 @@ module.exports = {
 	      }
 	    }),
         new OpenBrowserPlugin({ url: 'http://localhost:9090/' }),
-        // ÈÈ¸üĞÂ
+        // çƒ­æ›´æ–°
         new webpack.HotModuleReplacementPlugin(),
-       	// ´ò°üµÚÈı·½¿â
+       	// æ‰“åŒ…ç¬¬ä¸‰æ–¹åº“
         // new webpack.optimize.CommonsChunkPlugin({
         //     names: ['common'],
         // }),
