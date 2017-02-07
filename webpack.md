@@ -81,7 +81,6 @@ plugins: [
 ```
 
 ### webpack常用插件
-
 1. DefinePlugin 开发环境定义
 ```
 plugins:{
@@ -92,7 +91,6 @@ plugins:{
 	})
 }
 ```
-
 2. UglifyJsPlugin 压缩混淆
 ```
 plugins:{
@@ -103,14 +101,12 @@ plugins:{
 	})
 }
 ```
-
 3. HotModuleReplacement 热加载
 ```
 plugins:{
 	new webpack.HotModuleReplacementPlugin()
 }
 ```
-
 4. ProvidePlugin 即时加载
 ```
 plugins:{
@@ -119,28 +115,24 @@ plugins:{
 	})
 }
 ```
-
 5. DedupePlugin 删除重复依赖
 ```
 plugins:{
 	new webpack.optimize.DedupePlugin()
 }
 ```
-
 6. NoErrorsPlugin 跳过编译错误
 ```
 plugins:{
 	new webpack.NoErrorsPlugin()
 }
 ```
-
 7. CommonsChunkPlugin 提取公共模块
 ```
 plugins:{
 	new webpack.optimize.CommonsChunkPlugin(options)
 }
 ```
-
 8. ExtractTextPlugin 文件抽取
 ```
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -156,7 +148,6 @@ plugins:{
 	new ExtractTextPlugin([id: string], filename: string, [options])
 }
 ```
-
 9. OpenBrowserPlugin 启动浏览器
 ```
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
@@ -164,7 +155,6 @@ plugins:{
 	new OpenBrowserPlugin({ url: 'http://localhost:9090/' })
 }
 ```
-
 10. HtmlWebpackPlugin HTML文件生成
 ```
 var HtmlWebpackPlugin = require('html-webpack-plugin');
