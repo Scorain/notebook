@@ -171,3 +171,107 @@ main {
 	flex: 1;
 }
 ```
+
+
+***
+
+#### 形状篇
+
+###### 案例1：自适应椭圆
+
+椭圆
+```
+div {
+	border-radius: 50%;
+}
+```
+
+半椭圆
+```
+div {
+	border-top-left-radius: 50% 100%;
+	border-top-right-radius: 50% 100%;
+}
+```
+
+四分之一椭圆
+```
+div {
+	border-top-left-radius: 100%;
+}
+```
+
+>**border-radius**关键字可参考[MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-radius)
+
+###### 案例2：平行四边形
+
+嵌套元素方案
+
+```
+<div>
+    <p>click me</p>
+</div>
+```
+
+```
+div {
+    width:50px;
+	height:20px;
+	background-color:red;
+    transform: skew(45deg);
+}
+div>p {
+    transform: skew(-45deg);
+}
+```
+
+为元素方案
+```
+<div></div>
+```
+
+```
+div {
+    width:50px;
+	height:20px;
+	position:relative;
+}
+div::before {
+	content:"";
+	position:absolute;
+	top:0; left:0; bottom:0; right:0;
+	background-color:red;
+    transform: skew(-45deg);
+}
+```
+
+###### 案例3：菱形图片
+
+基于变形的方案
+
+```
+<div class="picture">
+	<img src="test.jpg" />
+</div>
+```
+
+```
+.picture {
+	width:400px;
+	transform:rotate(45deg);
+	overflow:hidden;
+}
+.picture > img {
+	max-width:100%;
+	transform:rotate(-45deg) scale(1.42);
+}
+```
+
+基于裁切路径的方案
+
+```
+div {
+	clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);
+}
+```
+
