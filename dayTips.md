@@ -68,4 +68,21 @@ web接口之 `FileReader` 对象
 
 ---
 
+### 2017-04-14
 
+
+CSS3 属性 `box-shadow`
+
+```
+selector {
+    box-shadow: inset <offset-x> <offset-y> <blur-radius> <spread-radius> <color>, ...
+}
+```
+
+
+
+**参考文献**
+
+- [box-shadow](https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-shadow)
+
+---
