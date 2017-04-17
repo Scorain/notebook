@@ -86,3 +86,29 @@ selector {
 - [box-shadow](https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-shadow)
 
 ---
+
+
+### 2017-04-17
+
+
+前端实现0.5px细线
+
+> 背景图片
+
+> css3 缩放
+
+> css3 线性渐变
+
+> css3 阴影
+
+> meta 页面缩放
+
+
+
+**参考文献**
+
+- [css3使用技巧：细线边框的3种不同的写法](http://www.daqianduan.com/5935.html)
+
+- [纯CSS实现border的0.5px设置](http://www.zhangyunling.com/543.html)
+
+---
