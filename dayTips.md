@@ -112,3 +112,29 @@ selector {
 - [纯CSS实现border的0.5px设置](http://www.zhangyunling.com/543.html)
 
 ---
+
+
+
+### 2017-04-20
+
+
+前端上报
+
+> js报错   window.onerror
+
+> 性能   window.prefermance
+
+> 日志
+
+> UI监控
+
+
+
+
+**参考文献**
+
+- [前端相关数据监控](http://www.alloyteam.com/2014/03/front-end-data-monitoring/)
+
+- [如何做前端异常监控？](https://www.zhihu.com/question/29953354)
+
+---

@@ -20,12 +20,26 @@
 
 3) 原理
 
-![观察者模式数据结构图解](./images/pubsub-data-structure.png)
+![观察者模式数据结构图解](./images/pubsub-data-structure.PNG)
 
 
 ### Buffer 模块
 
-　　Buffer类是用于处理二进制数据的，其实例代表一个大小固定、在V8堆外分配的物理内存。
+1）理解
+
+　　Buffer类是用于处理二进制数据的，其实例代表一个大小固定、在V8堆外分配的物理内存。buffer对象的使用类似于整型数组，在学习Buffer模块时，暂时不要去考虑其在其他模块（如File System, HTTP）中的应用方式，此处我们只需要知道，Buffer模块是用于 临时存储二进制数据 和 转换用户数据的编码格式 的。
+
+2）API
+
+    Buffer类   将其看作是一个容器
+    输入： Buffer.from(), Buffer.alloc(), Buffer.allocUnsafe()
+    操作： Buffer.concat(), Buffer.slice(), Buffer.write()
+    输出： buf.toString()
+
+3) 原理
+
+![缓冲区数据存储与转换图解](./images/buffer-data-transform.PNG)
+
 
 ### Stream 模块
 
