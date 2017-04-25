@@ -84,6 +84,29 @@
 
 ### File System 模块
 
+1）理解
+
+　　文件系统提供了对本地文件进行操作的接口，使开发者具有了对文件的增、删、查、改以及文件内容的读、写的能力。此模块是一系列前端构建工具（如gulp, webpack等）的基础。除了常规的文件操作接口之外，FS模块还封装了一套文件流式操作的接口，大大提高了开发效率。
+
+　　文件是数据持久化最有效的方式之一，一个文件包含的信息为文件元信息和文件内容。其中文件元信息包括文件名、文件权限、文件作者、文件创建时间、文件大小、文件编码格式等一系列对文件进行描述的信息；文件内容为文件的真实储存信息。
+
+
+2）API
+
+    文件流
+    fs.createReadStream(fileName, options)
+    fs.createWriteStream(fileName, options)
+    常规文件操作
+    开关 fs.open(fileName, flags, mode, callback) fs.close(fd, callback)
+    读写 fs.read(fd, buffer, offset, length, position, callback) fs.write(fd, data, position, encoding, callback)
+    读取元信息 fs.stat(path, callback)
+    常规文件夹操作
+    增 fs.mkdir(path, mode, callback)
+    删 fs.rmdir(path, callback)
+    查 fs.readdir(path, options, callback)
+
+3) 原理
+
 
 文件系统不同抽象级别图解
 
@@ -93,6 +116,13 @@
 
 
 ### HTTP 模块
+
+
+http web应用整体结构图解
+
+![http web应用整体结构图解](./images/web-struct.PNG)
+
+
 
 ### Errors 模块
 
