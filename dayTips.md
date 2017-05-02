@@ -138,3 +138,24 @@ selector {
 - [如何做前端异常监控？](https://www.zhihu.com/question/29953354)
 
 ---
+
+
+
+
+### 2017-04-28
+
+
+给git仓库配置用户名和邮箱
+
+> 用户名 `git config [--global] [--unset] user.name 'yourname'`
+
+> 邮箱 `git config [--global] [--unset] user.email 'youremail'`
+
+
+
+
+**参考文献**
+
+- [同一客户端下使用多个git账号](http://www.jianshu.com/p/89cb26e5c3e8)
+
+---
