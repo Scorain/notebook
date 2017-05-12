@@ -119,8 +119,15 @@
 
 1）理解
 
+　　http模块是nodejs搭建http服务器的核心基础模块，此模块将B/S架构中的 S 和 B 抽象为两个类，将B/S通信的 请求数据 和 响应数据 也抽象为两个类。利用以上几个类即可实现基于nodejs的web业务层（中间层）服务器，达到连接客户端和数据服务层的目的。
+
 
 2）API
+
+    服务抽象类: http.Server
+    客户端抽象类： http.ClientRequest
+    请求数据抽象类： http.IncomingMessage
+    响应数据抽象类： http.ServerResponse
 
 
 3) 原理
@@ -133,5 +140,20 @@ http web应用整体结构图解
 
 
 ### Errors 模块
+
+1）理解
+
+　　在稍微复杂一点的应用中，错误是无法避免的，对错误的捕获和处理可以使开发者快速定位问题，对于一个健壮的应用而言是非常重要的一件事情。在nodejs中，常见的错误类型包括语法错误、引用错误、类型错误等；错误的捕获方式有如下几种：抛出异常、回调、监听事件等。
+
+
+2）API
+
+    通用错误类: Error
+    子类： 语法错误 SyntaxError 引用错误 ReferenceError 类型错误 TypeError
+    
+    错误捕获方式： throw try{...}catch(error){...} EventTarget.on('error',callback)
+
+
+
 
 ### Timers 模块
