@@ -159,3 +159,32 @@ selector {
 - [同一客户端下使用多个git账号](http://www.jianshu.com/p/89cb26e5c3e8)
 
 ---
+
+
+
+
+### 2017-05-23
+
+
+through2:转换数据流的封装
+
+```
+
+const through2 = require('require2');
+const toUpperCase = through2((dataIn, enc, cb) => {
+    let dataOut = new Buffer(data.toString().toUpperCase());
+    let error = null;
+    cb(error, dataOut);
+});
+process.stdin.pipe(toUpperCase).pipe(process.stdout);
+
+```
+
+　　through2是nodejs中转换数据流的封装库。上例中 dataIn 是读入数据， dataOut是写出数据，error 是错误信息。
+
+
+**参考文献**
+
+- [Node.js之对象流（Stream）权威指南](https://futu.im/posts/2017-05-21-object-streams-in-nodejs/)
+
+---
