@@ -188,3 +188,22 @@ process.stdin.pipe(toUpperCase).pipe(process.stdout);
 - [Node.js之对象流（Stream）权威指南](https://futu.im/posts/2017-05-21-object-streams-in-nodejs/)
 
 ---
+
+
+
+### 2017-05-25
+
+
+IOS body绑定click事件的bug
+
+> window，document，body 绑定click事件时，点击body不会触发
+
+
+
+
+**参考文献**
+
+- [IOS上给body绑定click事件的bug](http://yanhaijing.com/mobile/2015/08/27/click-bug-on-body-on-ios/)
+- [微信内置浏览器不支持 onclick 如何解决？](https://www.zhihu.com/question/37536990)
+
+---
