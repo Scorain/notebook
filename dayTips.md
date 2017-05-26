@@ -207,3 +207,27 @@ IOS body绑定click事件的bug
 - [微信内置浏览器不支持 onclick 如何解决？](https://www.zhihu.com/question/37536990)
 
 ---
+
+
+
+
+### 2017-05-26
+
+
+水平、垂直居中的实现
+
+> table时代 `align` `valign`
+
+> css时代 `标准文档流` `浮动布局` `定位布局`
+
+> flex时代 `父容器` `子容器` `主轴` `交叉轴`
+
+
+
+
+**参考文献**
+
+- [一劳永逸的搞定 flex 布局](https://juejin.im/post/58e3a5a0a0bb9f0069fc16bb)
+- [CSS Flexible Box Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
+
+---
