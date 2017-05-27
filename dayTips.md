@@ -231,3 +231,24 @@ IOS body绑定click事件的bug
 - [CSS Flexible Box Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
 
 ---
+
+
+
+
+### 2017-05-27
+
+
+安卓微信浏览器location.href刷新页面失效
+
+　　现象：安卓微信中使用location来刷新当前页面，刷新会失效
+
+　　推测：浏览器缓存了当前页面的url
+
+　　方案：给url加版本号，改变url的值
+
+
+
+
+**参考文献**
+
+- [解决微信内置浏览器location.href和reload刷新失效的问题](http://www.9open.com/article/id/18521.html)
