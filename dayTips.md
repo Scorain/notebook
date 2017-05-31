@@ -170,7 +170,7 @@ through2:转换数据流的封装
 
 ```
 
-const through2 = require('require2');
+const through2 = require('through2');
 const toUpperCase = through2((dataIn, enc, cb) => {
     let dataOut = new Buffer(data.toString().toUpperCase());
     let error = null;
@@ -252,3 +252,26 @@ IOS body绑定click事件的bug
 **参考文献**
 
 - [解决微信内置浏览器location.href和reload刷新失效的问题](http://www.9open.com/article/id/18521.html)
+
+
+
+
+
+
+
+### 2017-05-31
+
+
+思维导图
+
+> 思维可视化工具
+
+
+
+
+**参考文献**
+
+- [ProcessOn 在线脑图工具](https://www.processon.com/)
+- [百度脑图](http://naotu.baidu.com/)
+
+---
