@@ -275,3 +275,27 @@ IOS body绑定click事件的bug
 - [百度脑图](http://naotu.baidu.com/)
 
 ---
+
+
+
+
+
+
+### 2017-06-02
+
+关于 `line-height`
+
+
+> 将line-height的值设为 `1` 是一个很糟糕的实践
+
+> css 难以控制字体度量
+
+
+
+
+**参考文献**
+
+- [深入理解 CSS：字体度量、line-height 和 vertical-align](https://zhuanlan.zhihu.com/p/25808995)
+- [FontForge 与字体设计](http://designwithfontforge.com/zh-CN/Introduction.html)
+
+---
