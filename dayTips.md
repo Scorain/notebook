@@ -299,3 +299,29 @@ IOS body绑定click事件的bug
 - [FontForge 与字体设计](http://designwithfontforge.com/zh-CN/Introduction.html)
 
 ---
+
+
+
+
+### 2017-06-02
+
+
+使用fiddler进行移动端自测
+
+
+> `Inspectors` 可以抓包
+
+> `AutoResponder` 可以伪造响应
+
+> `Composer` 可以伪造请求
+
+
+
+
+**参考文献**
+
+- [Fiddler教程](http://www.jianshu.com/p/99b6b4cd273c)
+- [使用Fiddler模拟客户端http响应](http://www.cnblogs.com/tangdongchu/p/4178552.html)
+- [Fiddler模拟POST请求](http://woyaowenzi.github.io/2015/05/19/Fiddler%E6%A8%A1%E6%8B%9FPOST%E8%AF%B7%E6%B1%82/)
+
+---
