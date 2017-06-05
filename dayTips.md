@@ -325,3 +325,26 @@ IOS body绑定click事件的bug
 - [Fiddler模拟POST请求](http://woyaowenzi.github.io/2015/05/19/Fiddler%E6%A8%A1%E6%8B%9FPOST%E8%AF%B7%E6%B1%82/)
 
 ---
+
+
+
+
+### 2017-06-05
+
+
+ajax封装
+
+
+> 实现Promise
+
+> 提供abort
+
+
+
+
+
+**参考文献**
+
+- [xhr/jsonp请求之abort详解](https://futu.im/posts/2017-06-01-xhr-jsonp-abort/)
+
+---
