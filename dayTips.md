@@ -348,3 +348,27 @@ ajax封装
 - [xhr/jsonp请求之abort详解](https://futu.im/posts/2017-06-01-xhr-jsonp-abort/)
 
 ---
+
+
+
+### 2017-06-08
+
+
+伪元素
+
+
+> 表示方法
+
+> input标签没有::before和::after伪元素
+
+
+
+
+
+**参考文献**
+
+- [Can I use the :after pseudo-element on an input field?](https://stackoverflow.com/questions/2587669/can-i-use-the-after-pseudo-element-on-an-input-field)
+
+- [伪元素](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Pseudo-elements)
+
+---
