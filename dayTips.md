@@ -375,7 +375,7 @@ ajax封装
 
 
 
-### 2017-06-20
+### 2017-06-19
 
 
 事件理论
@@ -398,6 +398,34 @@ ajax封装
 **参考文献**
 
 - [Event事件](http://ghmagical.com/article/page/id/nXCnaSLsuyWd)
+
+
+---
+
+
+
+
+### 2017-06-20
+
+错误理论
+
+
+> 错误类型
+
+> 错误捕获
+
+> 错误事件
+
+> 错误调试
+
+
+
+
+
+
+**参考文献**
+
+- [JavaScript半知半解-错误处理机制](https://www.kancloud.cn/dennis/tgjavascript/241854)
 
 
 ---
