@@ -372,3 +372,32 @@ ajax封装
 - [伪元素](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Pseudo-elements)
 
 ---
+
+
+
+### 2017-06-20
+
+
+事件理论
+
+
+> 事件类型
+
+> 事件目标
+
+> 事件处理程序
+
+> 事件对象
+
+> 事件传播
+
+
+
+
+
+**参考文献**
+
+- [Event事件](http://ghmagical.com/article/page/id/nXCnaSLsuyWd)
+
+
+---
