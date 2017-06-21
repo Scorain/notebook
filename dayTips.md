@@ -429,3 +429,23 @@ ajax封装
 
 
 ---
+
+
+
+
+### 2017-06-21
+
+垃圾回收机制
+
+
+> 引用计数
+
+> 标记清除
+
+
+**参考文献**
+
+- [JavaScript半知半解-垃圾回收机制](https://www.kancloud.cn/dennis/tgjavascript/241857)
+
+
+---
