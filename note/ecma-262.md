@@ -64,7 +64,7 @@ IEEE Standard for the Scheme Programming Language. IEEE Std 1178-1990.
 
 ### 4.1 Web脚本
 
-
+浏览器提供ECMAScript客户端计算宿主环境，包括代表如windows,menus,pop-ups,dialog boxes,text areas,anchors,frames,history,cookies,input/output等的对象。随后，这个宿主环境提供将脚本代码绑定到诸如焦点改变、页面图片加载卸载错误取消，选择框表单提交和鼠标动作等事件上的途径。
 
 
 ## 5.符号约定
