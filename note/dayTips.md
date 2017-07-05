@@ -449,3 +449,22 @@ ajax封装
 
 
 ---
+
+
+
+### 2017-07-05
+
+做动画时尽量用requestAnimationFrame替代setTimeout
+
+
+```
+var rAF = window.requestAnimationFrame	||
+        window.webkitRequestAnimationFrame	||
+        window.mozRequestAnimationFrame		||
+        window.oRequestAnimationFrame		||
+        window.msRequestAnimationFrame		||
+        function (callback) { window.setTimeout(callback, 1000 / 60); };
+```
+
+
+---
