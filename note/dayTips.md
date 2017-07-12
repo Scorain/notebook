@@ -500,3 +500,90 @@ javascript设计模式
 - [汤姆大叔的博客](http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html)
 
 ---
+
+
+
+
+### 2017-07-10
+
+jquery 和 underscore 实现的页面状态切换的封装
+
+```
+var $ = require('jquery');
+var _ = require('underscore');
+/**
+ * 路由
+ * @constructor
+ * @param {string} view 视图容器选择器
+ * @reutrn
+ * */
+module.exports = function UrlLoader(view) {
+    var $viewBox = $(view);
+    this._views = {};
+    this.when = function (status, config) {
+        var str = $(config.template).html();
+        var templateFn = _.template(str);
+        this._views[status] = {
+            templateFn: templateFn,
+            controllerFn: config.controller,
+            deps: config.deps
+        };
+        return this;
+    };
+    this.switch = function (status) {
+        var self = this;
+        var depsArr;
+        var compile = function (obj) {
+            $viewBox.html(self._views[status]['templateFn'](obj));
+            return $viewBox;
+        };
+        $viewBox.off();
+        depsArr = [compile, this].concat(this._views[status]['deps']);
+        this._views[status]['controllerFn'].apply(null, depsArr);
+    };
+    this.init = function (status) {
+        this.switch(status);
+    };
+};
+```
+
+
+
+用法：
+
+入口js
+
+```
+var UrlLoader = require('./roader.js');
+var bannerListContainer = require('./bannerListContainer.js');
+var bannerItemContainer = require('./bannerItemContainer.js');
+var xhr = require('./xhrService.js');
+var common = require('./commonService.js');
+window.onload = function () {
+    var loader = new UrlLoader('#j-views');
+    loader.when('bannerList', {
+        template: '#bannerList',
+        controller: bannerListContainer,
+        deps: [xhr, common]
+    }).when('bannerItem', {
+        template: '#bannerItem',
+        controller: bannerItemContainer,
+        deps: [common]
+    }).init('bannerList');
+};
+```
+
+bannerList状态逻辑
+
+```
+module.exports = function bannerListContainer (compile, loader, xhr, common) {
+    var view = compile({});
+    view.on('click', '.j-focusad-new', function () {
+        loader.switch('bannerItem');
+    });
+};
+```
+
+
+
+---
