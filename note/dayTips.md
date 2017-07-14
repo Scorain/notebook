@@ -602,6 +602,8 @@ module.exports = function bannerListContainer (compile, loader, xhr, common) {
 
 > 组件
 
+![一种模块化开发模型](./images/module-component.png)
+
 
 **参考文献**
 
