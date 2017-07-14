@@ -587,3 +587,25 @@ module.exports = function bannerListContainer (compile, loader, xhr, common) {
 
 
 ---
+
+
+
+
+
+### 2017-07-14
+
+资源、模块、组件概念
+
+> 资源： html,css,js,图片,字体等文件
+
+> 模块
+
+> 组件
+
+
+**参考文献**
+
+- [关于前端开发中“模块”和“组件”概念的思考](https://github.com/hax/hax.github.com/issues/21)
+
+
+---
