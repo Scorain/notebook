@@ -611,3 +611,23 @@ module.exports = function bannerListContainer (compile, loader, xhr, common) {
 
 
 ---
+
+
+
+
+### 2017-07-17
+
+nth-child与nth-of-type
+
+> nth-child(): 如果父元素的第n个子元素符合条件，则命中
+
+> nth-of-type(): 命中父元素的第n个符合条件的子元素
+
+
+
+**参考文献**
+
+- [CSS3选择器:nth-child和:nth-of-type之间的差异](http://www.zhangxinxu.com/wordpress/2011/06/css3%E9%80%89%E6%8B%A9%E5%99%A8nth-child%E5%92%8Cnth-of-type%E4%B9%8B%E9%97%B4%E7%9A%84%E5%B7%AE%E5%BC%82/)
+
+
+---
