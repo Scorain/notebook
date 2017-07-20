@@ -630,4 +630,32 @@ nth-child与nth-of-type
 - [CSS3选择器:nth-child和:nth-of-type之间的差异](http://www.zhangxinxu.com/wordpress/2011/06/css3%E9%80%89%E6%8B%A9%E5%99%A8nth-child%E5%92%8Cnth-of-type%E4%B9%8B%E9%97%B4%E7%9A%84%E5%B7%AE%E5%BC%82/)
 
 
+
+
+
+### 2017-07-20
+
+层叠等级划分
+
+> 元素的背景和边框形成的层叠上下文
+
+> z-index为负数的层叠上下文
+
+> 正常文档流中，非行内、未定位的元素
+
+> 未定位的浮动元素
+
+> 正常文档流中，未定位的行内元素
+
+> z-index为0的层叠上下文
+
+> z-index为正数的层叠上下文
+
+
+
+**参考文献**
+
+- [学习 z-index](https://github.com/YIXUNFE/blog/issues/78)
+
+
 ---
