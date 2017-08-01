@@ -683,7 +683,7 @@ nth-child与nth-of-type
 ### 2017-07-31
 
 
-js中的异步思维方式
+js中的异步思维方式 (toobug哥分享)
 
 > callback
 
@@ -691,12 +691,49 @@ js中的异步思维方式
 
 > Stream
 
-> Rx.js
+> Rx.js （类似时间序列）
 
 
 **参考文献**
 
 - [RxJS](http://reactivex.io/rxjs/manual/tutorial.html)
+
+
+---
+
+
+
+
+### 2017-07-31
+
+
+css中的百分比
+
+> background-position   相对于容器尺寸减去背景图片尺寸
+
+> width & height   相对于包含块尺寸
+
+> left & right & top & bottom   相对于包含块的尺寸
+
+> margin & padding   相对于包含块的宽度
+
+> border-radius   相对于自身尺寸
+
+> font-size   相对于父元素的font-size
+
+> line-height   相对于元素自身的font-size
+
+> vertical-align   相对于元素自身的line-height
+
+> transform:translate   相对于元素自身的边框尺寸
+
+
+**参考文献**
+
+- [Positioning Images: the ‘background-position’ property](https://www.w3.org/TR/css3-background/#the-background-position)
+
+- [详述css中的百分比值](http://acgtofe.com/posts/2014/06/percentage-in-css)
+
 
 
 ---
