@@ -737,3 +737,38 @@ css中的百分比
 
 
 ---
+
+
+
+
+
+### 2017-08-02
+
+
+SQL基础语句
+
+> SELECT 语法：selete field1,field2... from table
+
+> DISTINCT 语法：selete distinct field from table
+
+> WHERE 语法：selete * from table where field operator value
+
+> AND & OR 语法：selete * from table where (field1 operation1 value1 or field2 operator2 value2) and field3 operator3 valie3
+
+> Order By 语法：selete * from table order by field
+
+> INSERT 语法：insert info table (field1,field2) values (value1,value2)
+
+> UPDATE 语法：update table set field1 = value where field2 = value2
+
+> DELETE 语法：delete from table where field operator value
+
+
+**参考文献**
+
+
+- [SQL 语法](http://www.w3school.com.cn/sql/sql_syntax.asp)
+
+
+
+---
