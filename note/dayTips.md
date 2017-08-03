@@ -747,17 +747,17 @@ css中的百分比
 
 SQL基础语句
 
-> SELECT 语法：selete field1,field2... from table
+> SELECT 语法：select field1,field2... from table
 
-> DISTINCT 语法：selete distinct field from table
+> DISTINCT 语法：select distinct field from table
 
-> WHERE 语法：selete * from table where field operator value
+> WHERE 语法：select * from table where field operator value
 
-> AND & OR 语法：selete * from table where (field1 operation1 value1 or field2 operator2 value2) and field3 operator3 valie3
+> AND & OR 语法：select * from table where (field1 operation1 value1 or field2 operator2 value2) and field3 operator3 valie3
 
-> Order By 语法：selete * from table order by field
+> Order By 语法：select * from table order by field
 
-> INSERT 语法：insert info table (field1,field2) values (value1,value2)
+> INSERT 语法：insert into table (field1,field2) values (value1,value2)
 
 > UPDATE 语法：update table set field1 = value where field2 = value2
 
