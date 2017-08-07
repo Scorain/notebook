@@ -772,3 +772,41 @@ SQL基础语句
 
 
 ---
+
+
+
+
+
+
+
+### 2017-08-07
+
+
+js中的表达式和语句
+
+> 表达式： 产生一个值，可嵌套
+
+> 语句： 产生一个行为，独立
+
+
+
+禁止表达式语句以花括号或关键字的function开头:
+
+
+```
+ExpressionStatement :
+
+[lookahead ∉ {"{", "function"}] Expression ;
+```
+
+
+**参考文献**
+
+
+- [JS表达式和语句的区别](https://segmentfault.com/q/1010000004102804)
+
+- [表达式 vs 语句](http://clarkdo.github.io/javascript/2015/04/17/56/)
+
+
+
+---
