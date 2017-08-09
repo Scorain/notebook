@@ -810,3 +810,30 @@ ExpressionStatement :
 
 
 ---
+
+
+
+
+
+### 2017-08-09
+
+
+nodejs中的路径相关
+
+> 进程路径   process.cwd()
+
+> node.exe路径   process.argv[0]
+
+> 当前执行js文件路径   process.argv[1]
+
+> 当前js模块路径   __dirname + __filename
+
+> 路径处理   path.resolve() + path.relative() + path.join() + path.parse()
+
+
+**参考文献**
+
+- [http://nodejs.cn/api/](http://nodejs.cn/api/)
+
+
+---
