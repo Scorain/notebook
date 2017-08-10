@@ -837,3 +837,29 @@ nodejs中的路径相关
 
 
 ---
+
+
+
+### 2017-08-10
+
+
+js中运算符的优先级
+
+> 圆括号: 圆括号运算符、函数调用
+
+> 成员访问: 成员访问、需计算的成员访问
+
+> new: 带参数列表、无参数列表
+
+```
+圆括号运算符() > 成员访问. > 需计算的成员访问[] > 带参数列表new > 函数调用() > 无参数列表new
+```
+
+
+
+**参考文献**
+
+- [运算符优先级](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+
+
+---
