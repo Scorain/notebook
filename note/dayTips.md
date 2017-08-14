@@ -890,6 +890,7 @@ js中运算符的优先级
 
 - [clip-path神作](http://species-in-pieces.com/#)
 
+- [SVG教程 基本形状](https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Basic_Shapes)
 
 ---
 
