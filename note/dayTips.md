@@ -895,3 +895,62 @@ js中运算符的优先级
 ---
 
 
+
+
+### 2017-08-14
+
+
+js修饰器
+
+> ECMAScript decorator
+
+> 设计模式 装饰者模式
+
+
+
+装饰者模式可以动态地新增和修改功能，可以理解为一个函数，输入被装饰者、输出新增或修改了功能的装饰者。
+
+
+```
+@decorator
+class A {}
+
+//等同于
+
+class A {};
+A = decorator (A) || A;
+```
+
+
+
+```
+function ConstructorA () {
+    this.name = function () {
+        return '我是被装饰者'；
+    }
+}
+
+function decorator (instance) {
+    var target = instance;
+    target.name = function () {
+        return instance.name.replace('被'， '');
+    }
+    return target;
+}
+
+var a = new ConstructorA();
+var b = decorator(a);
+console.log(a.name); // 我是被装饰者
+console.log(b.name); // 我是装饰者
+
+```
+
+
+**参考文献**
+
+- [ECMAScript 6 入门](http://es6.ruanyifeng.com/#docs/decorator)
+
+- [深入理解JavaScript系列（29）：设计模式之装饰者模式](http://www.cnblogs.com/TomXu/archive/2012/02/24/2353434.html)
+
+---
+
