@@ -1008,3 +1008,19 @@ console.log(b.name); // 我是装饰者
 
 ---
 
+
+### 2017-08-31
+
+
+关于动画性能
+
+> 开启GPU： transform   opacity
+
+
+**参考文献**
+
+- [一篇文章说清浏览器解析和CSS（GPU）动画优化](https://segmentfault.com/a/1190000008015671)
+
+- [两张图解释CSS动画的性能](https://github.com/ccforward/cc/issues/42)
+
+---
