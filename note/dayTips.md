@@ -1024,3 +1024,23 @@ console.log(b.name); // 我是装饰者
 - [两张图解释CSS动画的性能](https://github.com/ccforward/cc/issues/42)
 
 ---
+
+
+
+### 2017-08-31
+
+
+关于浏览器缓存缓存
+
+> css,js,图片：强缓存
+
+> 入口文件：协商缓存 无缓存
+
+
+**参考文献**
+
+- [Nginx 配置之性能篇](https://imququ.com/post/my-nginx-conf-for-wpo.html)
+
+
+---
+
