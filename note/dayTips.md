@@ -1027,20 +1027,29 @@ console.log(b.name); // 我是装饰者
 
 
 
-### 2017-08-31
+
+### 2017-09-01
 
 
-关于浏览器缓存缓存
+http头可以分为如下几类
+
+> 内容协商
+
+> 缓存协商
+
+> 传输协商
+
+
+浏览器缓存策略的通识
 
 > css,js,图片：强缓存
 
 > 入口文件：协商缓存 无缓存
 
-
 **参考文献**
 
 - [Nginx 配置之性能篇](https://imququ.com/post/my-nginx-conf-for-wpo.html)
 
+- [Jerry Qu | 专题 | HTTP 相关](https://imququ.com/post/series.html)
 
 ---
-
