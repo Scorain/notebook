@@ -1053,3 +1053,26 @@ http头可以分为如下几类
 - [Jerry Qu | 专题 | HTTP 相关](https://imququ.com/post/series.html)
 
 ---
+
+
+### 2017-09-14
+
+
+three.js 3D效果实现的一些基本概念
+
+> 场景 scene
+
+> 相机 camera
+
+> 渲染器 renderer
+
+
+
+
+**参考文献**
+
+- [Three.js 中文教程](http://techbrood.com/threejs/docs/)
+
+- [WebGL中文网](http://www.hewebgl.com/article/getarticle/27)
+
+---
